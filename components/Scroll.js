@@ -87,7 +87,7 @@ const Primary = props => {
         ref={iconRef}
         data-lax-preset={'scaleInFadeOut'}
         className="icon"
-        borderRadius="lg"
+        borderRadius="sm"
         boxShadow={BoxShadow}
         sx={{
           width: '200px',
@@ -101,7 +101,7 @@ const Primary = props => {
           transform: `translate3d(-50%, -50%, 0)`
         }}
       >
-        <Image src="/soren.jpg" alt="test" p={1} borderRadius="lg" />{' '}
+        <Image src="/soren.jpg" alt="test" p={1} borderRadius="md" />{' '}
       </Box>
       <Box
         ref={videoMaskRef}
