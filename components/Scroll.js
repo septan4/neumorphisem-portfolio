@@ -1,23 +1,17 @@
-import { useColorModeValue, Text, Flex, Box, Image } from '@chakra-ui/react'
-import { Fragment } from 'react'
+import { useColorModeValue, Flex, Box, Image } from '@chakra-ui/react'
 import Section from './SectionS'
 import SectionContent from './SectionContent'
 import StickyContainer from './sticky/StickyContainer'
-import Video from './VideoGrid.js'
 import { useLaxElement } from '../hooks/useLax'
 
-const url =
-  'https://res.cloudinary.com/dannykeane/video/upload/sp_full_hd_lean/q_80:qmax_90,ac_none/v1/dk-memoji-dark.m3u8'
-
 export default props => {
-  const calHeights = [`100vh`, `100vh`, `100vh`, `45vh`]
+  const calHeights = [`100vh`, `100vh`, `30vh`, `0vh`]
   return (
     <Section>
       <StickyContainer
         calHeights={`calc(${calHeights[0]} + ${calHeights[1]} + ${calHeights[2]} + ${calHeights[3]})`}
         before={<Before />}
         primary={<Primary />}
-        after={<After calHeights={calHeights} />}
       />
     </Section>
   )
@@ -71,8 +65,7 @@ const Primary = props => {
     '4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgba(255,255,255,1)'
   const BoxShadow = useColorModeValue(boxShadowLightBu, boxShadowDarkBu)
   const iconRef = useLaxElement()
-  const videoMaskRef = useLaxElement()
-  const videoRef = useLaxElement()
+
   return (
     <Box
       id={'bio'}
@@ -90,9 +83,8 @@ const Primary = props => {
         borderRadius="sm"
         boxShadow={BoxShadow}
         sx={{
-          width: '200px',
-          height: '152px',
-
+          width: '22%',
+          maxW: '200px',
           top: '50%',
           left: '50%',
           position: 'absolute',
@@ -103,96 +95,6 @@ const Primary = props => {
       >
         <Image src="/soren.jpg" alt="test" p={1} borderRadius="md" />{' '}
       </Box>
-      <Box
-        ref={videoMaskRef}
-        data-lax-preset={'videoMaskFade'}
-        as={'span'}
-        className={'video-mask'}
-        sx={{
-          width: 'inherit',
-          height: 'inherit',
-          display: 'block',
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-          position: 'absolute',
-          zIndex: 2
-        }}
-      />
-      <Box
-        ref={videoRef}
-        data-lax-anchor="#bio"
-        data-lax-preset={'videoScale'}
-        className={'video-container'}
-        sx={{ width: '100%', height: '100%', position: 'relative' }}
-      >
-        <Video
-          url={url}
-          sx={{
-            height: '100%',
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
-            position: 'absolute',
-            zIndex: 1,
-            objectFit: 'cover',
-            transformOrigin: '0 0'
-          }}
-        />
-        <Box
-          className={'video-placeholder'}
-          sx={{
-            width: '100%',
-            height: '100%',
-            minHeight: '100vh',
-            background: 'green',
-            top: '0',
-            right: '0',
-            left: '0',
-            position: 'absolute',
-            opacity: 0
-          }}
-        />
-      </Box>
     </Box>
-  )
-}
-
-const After = props => {
-  const { calHeights } = props
-  return (
-    <Fragment>
-      <Box sx={{ height: calHeights[2] }}>
-        <SectionContent>
-          <Flex
-            sx={{
-              height: '100%',
-              flexDirection: 'row',
-              alignItems: 'center',
-              flexWrap: 'wrap'
-            }}
-          >
-            <Box sx={{ maxWidth: '66.66667%', margin: '0 auto' }}>
-              <Text as={'p'}>
-                We put the brains of iPhone 11 Pro in the body of iPhone SE. A13
-                Bionic is the fastest chip ever in a smartphone, period. So
-                everything feels fluid, whether you’re launching apps, playing
-                the latest games, or exploring new ways to work and play with
-                augmented reality.
-              </Text>
-            </Box>
-          </Flex>
-        </SectionContent>
-      </Box>
-      <Box
-        sx={{
-          height: calHeights[3]
-        }}
-      >
-        yooo
-      </Box>
-    </Fragment>
   )
 }

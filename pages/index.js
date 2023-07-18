@@ -8,6 +8,8 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
+import { Fragment } from 'react'
+
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -24,7 +26,9 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     {' '}
-    <Scroll />
+    <Fragment>
+      <Scroll />
+    </Fragment>
     <Container maxW="container.lg">
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
