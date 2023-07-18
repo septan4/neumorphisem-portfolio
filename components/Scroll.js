@@ -5,7 +5,7 @@ import StickyContainer from './sticky/StickyContainer'
 import { useLaxElement } from '../hooks/useLax'
 
 export default props => {
-  const calHeights = [`100vh`, `100vh`, `30vh`, `0vh`]
+  const calHeights = [`100vh`, `100vh`, `37vh`, `0vh`]
   return (
     <Section>
       <StickyContainer

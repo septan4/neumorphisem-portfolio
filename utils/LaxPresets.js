@@ -9,7 +9,7 @@ const laxPresets = [
     name: 'scaleInFadeOut',
     options: {
       'data-lax-scale': '(elh) 4, (-vh*0.01) 4, (-vh*0.3) 4, (-vh*0.8) 20',
-      'data-lax-opacity': '(elh) 0, (-vh*0.01) 1, (-vh*0.8) 1, (-vh*0.99) 0',
+      'data-lax-opacity': '(elh) 0, (-vh*0.01) 1, (-vh*0.8) 1, (-vh*0.95) 0',
       //'data-lax-border-radius': '(elh) 4, (-vh*0.01) 20',
       'data-lax-translate-3d-rel': `(vh) -50, 0 -50`
     }
