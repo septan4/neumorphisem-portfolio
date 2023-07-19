@@ -18,6 +18,7 @@ import Section from '../components/section'
 
 import Image from 'next/image'
 import Scroll from '../components/Scroll'
+import Works from './works'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -29,7 +30,8 @@ const Home = () => (
     <Fragment>
       <Scroll />
     </Fragment>
-    <Container maxW="container.lg">
+    <Works />
+    <Container maxW="container.lg" mt={20}>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">

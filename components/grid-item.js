@@ -5,7 +5,8 @@ import {
   Text,
   LinkBox,
   LinkOverlay,
-  useColorModeValue
+  useColorModeValue,
+  useMediaQuery
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
@@ -28,19 +29,16 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 export const WorkGridItem = ({ children, src }) => {
-  const boxShadowDarkBu =
-    ' -3px -3px 3px 0 rgba(255, 255, 255, 0.04), 5px 5px 5px 0 rgba(0, 0, 0, 2)'
-  const boxShadowLightBu =
-    '4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgba(255,255,255,1)'
-  const BoxShadow = useColorModeValue(boxShadowLightBu, boxShadowDarkBu)
+  const [isSmallScreen] = useMediaQuery('(min-width: 800px)')
   return (
-    <Box w="100%" textAlign="center" boxShadow={BoxShadow}>
+    <Box w="100%" textAlign="center" overflow="hidden">
       <iframe
         width="100%"
+        height={isSmallScreen ? '250px' : '100%'}
         src={src}
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; "
         allowfullscreen
       ></iframe>
     </Box>
