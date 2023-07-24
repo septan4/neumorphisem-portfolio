@@ -35,20 +35,6 @@ const Home = () => (
           Clients' Needs And Develop Successful Promotional Strategies.
           Competent In Using Adobe After Effects And Adobe Premiere Pro To
           Fullfill The Needs Of My Clients.
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
         </Paragraph>
         <Box align="center" my={4}>
           <Button

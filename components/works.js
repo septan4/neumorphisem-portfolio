@@ -3,14 +3,14 @@ import {
   Heading,
   SimpleGrid,
   useColorModeValue,
-  Box
+  Box,
+  Button
 } from '@chakra-ui/react'
 import Layout from './layouts/article'
 import Section from './section'
 import { WorkGridItem } from './grid-item'
 import React, { useState } from 'react'
-import styled from 'styled-components'
-import { CSSTransition, SwitchTransition } from 'react-transition-group'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useTheme } from '@chakra-ui/react'
 
 const video = 'https://www.youtube-nocookie.com/embed/8QOVtlgGZg0'
@@ -21,45 +21,6 @@ const video4 = 'https://www.youtube.com/embed/qO6LHn9SQzs'
 const video5 = 'https://www.youtube.com/embed/pZcBJafF79w'
 const video6 = 'https://www.youtube.com/embed/eODz5Cjvws4'
 const video7 = 'https://www.youtube.com/embed/PzdVtVdYstw'
-
-const TabContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-`
-
-const TabButton = styled.button`
-  border-radius: 5px;
-  border: none;
-  margin: 0 10px;
-  padding: 10px 20px;
-  box-shadow: ${props => props.boxShadow};
-  &:focus {
-    outline: none;
-  }
-`
-
-const TabContent = styled.div`
-  padding: 20px;
-
-  border-radius: 5px;
-
-  transition: opacity 300ms ease-in-out;
-  &.fade-enter {
-    opacity: 0;
-  }
-  &.fade-enter-active {
-    opacity: 1;
-  }
-  &.fade-exit {
-    opacity: 1;
-  }
-  &.fade-exit-active {
-    opacity: 0;
-  }
-`
-
-const tabs = ['New Works', 'Old Works']
 
 const Works = () => {
   const theme = useTheme()
@@ -73,11 +34,26 @@ const Works = () => {
 
   const activeBoxShadow = useColorModeValue(boxShadowLight, boxShadowDark)
   const inactiveBoxShadow = useColorModeValue(boxShadowLightBu, boxShadowDarkBu)
+  const activeColor = useColorModeValue('#8121b5', 'whiteAlpha.900')
+  const [visibleCount, setVisibleCount] = useState(4)
+  const videos = [video, video1, video2, video3, video4, video5, video6, video7]
+  const handleSeeMoreClick = () => {
+    if (visibleCount === 4) {
+      setVisibleCount(videos.length) // Show all videos
+    } else {
+      setVisibleCount(4) // Show only 4 videos
+    }
+  }
 
   return (
     <Layout title="Works">
       <Container maxW="container.lg">
-        <Box width="100%" boxShadow={inactiveBoxShadow} borderRadius="lg" p={2}>
+        <Box
+          width="100%"
+          boxShadow={inactiveBoxShadow}
+          borderRadius="lg"
+          p={{ base: 2, lg: 4 }}
+        >
           <Heading as="h3" fontSize={20} mb={4} p={4}>
             Works
           </Heading>
@@ -87,31 +63,44 @@ const Works = () => {
             gap={[1, 1, 5]}
             p={{ base: 0, lg: 2 }}
           >
-            <Section>
-              <WorkGridItem src={video}></WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem src={video1}></WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem src={video2}></WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem src={video3}></WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem src={video4}></WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem src={video5}></WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem src={video6}></WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem src={video7}></WorkGridItem>
-            </Section>
+            {videos.slice(0, 4).map((videoSrc, index) => (
+              <Section key={index}>
+                <WorkGridItem src={videoSrc}></WorkGridItem>
+              </Section>
+            ))}
           </SimpleGrid>
+          <AnimatePresence>
+            {visibleCount > 4 && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+              >
+                <SimpleGrid
+                  columns={[1, 1, 2]}
+                  gap={[1, 1, 5]}
+                  p={{ base: 0, lg: 2 }}
+                >
+                  {videos.slice(4).map((videoSrc, index) => (
+                    <Section key={index}>
+                      <WorkGridItem src={videoSrc}></WorkGridItem>
+                    </Section>
+                  ))}
+                </SimpleGrid>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <Button
+            margin={'auto'}
+            display="flex"
+            colorScheme="none"
+            color={activeColor}
+            onClick={handleSeeMoreClick}
+            boxShadow={inactiveBoxShadow}
+          >
+            {visibleCount === 4 ? 'See More' : 'See Less'}
+          </Button>
         </Box>
       </Container>
     </Layout>

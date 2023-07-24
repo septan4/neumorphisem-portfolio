@@ -24,8 +24,8 @@ const floatAnimations = keyframes`
   50% {  transform: translateY(10px) }
   100% {  transform: translateY(0px) }
 `
-const animationFirst = `${floatAnimation} 10s ease-in-out infinite`
-const animationSecond = `${floatAnimations} 10s ease-in-out infinite`
+const animationFirst = `${floatAnimation} 3s ease-in-out infinite`
+const animationSecond = `${floatAnimations} 5s ease-in-out infinite`
 
 const hero = () => {
   const boxShadowLight = 'inset 6px 6px 6px #cbced1, inset -6px -6px 6px white'
