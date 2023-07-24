@@ -54,7 +54,7 @@ const Works = () => {
           borderRadius="lg"
           p={{ base: 2, lg: 4 }}
         >
-          <Heading as="h3" fontSize={20} mb={4} p={4}>
+          <Heading as="h3" variant="section-title" fontSize={20} mb={4} p={4}>
             Works
           </Heading>
 
