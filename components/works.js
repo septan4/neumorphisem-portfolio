@@ -5,9 +5,9 @@ import {
   useColorModeValue,
   Box
 } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import Layout from './layouts/article'
+import Section from './section'
+import { WorkGridItem } from './grid-item'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { CSSTransition, SwitchTransition } from 'react-transition-group'
@@ -74,7 +74,6 @@ const Works = () => {
   const activeBoxShadow = useColorModeValue(boxShadowLight, boxShadowDark)
   const inactiveBoxShadow = useColorModeValue(boxShadowLightBu, boxShadowDarkBu)
 
-  const [activeTab, setActiveTab] = useState(tabs[0])
   return (
     <Layout title="Works">
       <Container maxW="container.lg">
@@ -82,61 +81,37 @@ const Works = () => {
           <Heading as="h3" fontSize={20} mb={4} p={4}>
             Works
           </Heading>
-          <TabContainer>
-            {tabs.map(tab => (
-              <TabButton
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                boxShadow={
-                  activeTab === tab ? activeBoxShadow : inactiveBoxShadow
-                }
-              >
-                {tab}
-              </TabButton>
-            ))}
-          </TabContainer>
-          <SwitchTransition>
-            <CSSTransition
-              key={activeTab}
-              addEndListener={(node, done) =>
-                node.addEventListener('transitionend', done, false)
-              }
-              classNames="fade"
-            >
-              <TabContent>
-                {activeTab === 'New Works' ? (
-                  <SimpleGrid columns={[1, 1, 2]} gap={[1, 1, 5]}>
-                    <Section>
-                      <WorkGridItem src={video}></WorkGridItem>
-                    </Section>
-                    <Section>
-                      <WorkGridItem src={video1}></WorkGridItem>
-                    </Section>
-                    <Section>
-                      <WorkGridItem src={video2}></WorkGridItem>
-                    </Section>
-                    <Section>
-                      <WorkGridItem src={video3}></WorkGridItem>
-                    </Section>
-                    <Section>
-                      <WorkGridItem src={video4}></WorkGridItem>
-                    </Section>
-                    <Section>
-                      <WorkGridItem src={video5}></WorkGridItem>
-                    </Section>
-                    <Section>
-                      <WorkGridItem src={video6}></WorkGridItem>
-                    </Section>
-                    <Section>
-                      <WorkGridItem src={video7}></WorkGridItem>
-                    </Section>
-                  </SimpleGrid>
-                ) : (
-                  `${activeTab} content`
-                )}
-              </TabContent>
-            </CSSTransition>
-          </SwitchTransition>
+
+          <SimpleGrid
+            columns={[1, 1, 2]}
+            gap={[1, 1, 5]}
+            p={{ base: 0, lg: 2 }}
+          >
+            <Section>
+              <WorkGridItem src={video}></WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem src={video1}></WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem src={video2}></WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem src={video3}></WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem src={video4}></WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem src={video5}></WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem src={video6}></WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem src={video7}></WorkGridItem>
+            </Section>
+          </SimpleGrid>
         </Box>
       </Container>
     </Layout>
@@ -144,4 +119,4 @@ const Works = () => {
 }
 
 export default Works
-export { getServerSideProps } from '../components/chakra'
+export { getServerSideProps } from './chakra'

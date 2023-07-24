@@ -57,6 +57,7 @@ const hero = () => {
         flexDir={{ base: 'column', md: 'row' }}
         alignItems={'center'}
         justifyContent={'center'}
+        h={'50%'}
       >
         <Box
           w={{ base: '100%', md: 'fit-content' }}
@@ -71,8 +72,8 @@ const hero = () => {
               src="/images/pr.png"
               alt="test"
               p={1}
-              width="100"
-              height="100"
+              width="60"
+              height="60"
             />{' '}
           </Box>
           <Box as={motion.div} animation={animationSecond}>
@@ -80,8 +81,8 @@ const hero = () => {
               src="/images/ai.png"
               alt="test"
               p={1}
-              width="100"
-              height="100"
+              width="70"
+              height="70"
             />{' '}
           </Box>
         </Box>
@@ -118,8 +119,8 @@ const hero = () => {
               src="/images/ps.png"
               alt="test"
               p={1}
-              width="100"
-              height="100"
+              width="60"
+              height="60"
             />{' '}
           </Box>
           <Box as={motion.div} animation={animationFirst}>
@@ -127,8 +128,8 @@ const hero = () => {
               src="/images/ae.png"
               alt="test"
               p={1}
-              width="100"
-              height="100"
+              width="60"
+              height="60"
             />{' '}
           </Box>
         </Box>

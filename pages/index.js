@@ -17,7 +17,7 @@ import Section from '../components/section'
 
 import Image from 'next/image'
 import Hero from '../components/hero'
-import Works from './works'
+import Works from '../components/works'
 
 const Home = () => (
   <Layout>
@@ -26,15 +26,15 @@ const Home = () => (
     <Container maxW="container.lg" mt={20}>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
+          +7 Years Experience Of Video Editing, Motion Graphic Designing, Sound
+          Editing, Studio Production, Commercial Advising, Brand Consulting And
+          Advertising. Excellent Communication Skills And Ability To Identify
+          Clients' Needs And Develop Successful Promotional Strategies.
+          Competent In Using Adobe After Effects And Adobe Premiere Pro To
+          Fullfill The Needs Of My Clients.
           <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
             Inkdrop
           </Link>
@@ -63,46 +63,9 @@ const Home = () => (
         </Box>
       </Section>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
-      </Section>
+      <Section delay={0.2}></Section>
 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
-        </Paragraph>
-      </Section>
+      <Section delay={0.3}></Section>
     </Container>
   </Layout>
 )

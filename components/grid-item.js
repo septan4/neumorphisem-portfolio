@@ -29,12 +29,14 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 export const WorkGridItem = ({ children, src }) => {
-  const [isSmallScreen] = useMediaQuery('(min-width: 800px)')
+  const [isSmallScreen] = useMediaQuery('(max-width: 600px)')
+  const [isMediumScreen] = useMediaQuery('(max-width: 850px)')
+
   return (
     <Box w="100%" textAlign="center" overflow="hidden">
       <iframe
         width="100%"
-        height={isSmallScreen ? '250px' : '100%'}
+        height={isSmallScreen ? '185px' : isMediumScreen ? '220px' : '260px'}
         src={src}
         title="YouTube video player"
         frameborder="0"
