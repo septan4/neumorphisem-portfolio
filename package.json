@@ -1,7 +1,7 @@
 {
-  "name": "craftzdog-homepage",
+  "name": "sourena-homepage",
   "version": "1.0.0",
-  "description": "Takuya's website",
+  "description": "Sourena's website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Takuya Matsuyama",
+  "author": "Sepehr Tanhaei",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
@@ -20,7 +20,6 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "framer-motion": "^8.4.0",
-    "lax.js": "^2.0.3",
     "next": "^13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -59,7 +59,7 @@ const TabContent = styled.div`
   }
 `
 
-const tabs = ['New Works', 'Old Works', 'ETC']
+const tabs = ['New Works', 'Old Works']
 
 const Works = () => {
   const theme = useTheme()

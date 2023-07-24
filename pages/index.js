@@ -8,7 +8,6 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { Fragment } from 'react'
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -17,55 +16,14 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
 import Image from 'next/image'
-import Scroll from '../components/Scroll'
+import Hero from '../components/hero'
 import Works from './works'
-
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
 
 const Home = () => (
   <Layout>
-    {' '}
-    <Fragment>
-      <Scroll />
-    </Fragment>
+    <Hero />
     <Works />
     <Container maxW="container.lg" mt={20}>
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
-          </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
-        </Box>
-        <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        >
-          <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            w="100px"
-            h="100px"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
-          >
-            <ProfileImage
-              src="/images/takuya.jpg"
-              alt="Profile image"
-              borderRadius="full"
-              width="100"
-              height="100"
-            />
-          </Box>
-        </Box>
-      </Box>
-
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work

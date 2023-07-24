@@ -3,12 +3,8 @@ import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-import { useLax, createLaxPreset } from '../../hooks/useLax'
-import laxPresets from '../../utils/laxPresets'
 
 const Main = ({ children, router }) => {
-  useLax()
-  createLaxPreset(laxPresets)
   return (
     <Box as="main" pb={8}>
       <Head>
