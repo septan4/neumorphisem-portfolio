@@ -21,7 +21,7 @@ const floatAnimation = keyframes`
 `
 const floatAnimations = keyframes`
   0% { transform: translateY(0px) }
-  50% {  transform: translateY(-20px) }
+  50% {  transform: translateY(10px) }
   100% {  transform: translateY(0px) }
 `
 const animationFirst = `${floatAnimation} 10s ease-in-out infinite`
