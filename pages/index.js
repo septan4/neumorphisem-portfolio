@@ -14,6 +14,8 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
+import Skill from '../components/skills'
+
 import Hero from '../components/hero'
 import Works from '../components/works'
 
@@ -41,7 +43,10 @@ const Home = () => {
             Promotional Strategies. Competent In Using Adobe After Effects And
             Adobe Premiere Pro To Fullfill The Needs Of My Clients.
           </Paragraph>
-          <Box align="center" my={4}>
+          <Box my={10}>
+            <Skill />
+          </Box>
+          <Box align="center" my={10}>
             <Button
               as={NextLink}
               href="/works"
