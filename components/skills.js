@@ -28,7 +28,8 @@ function MyTabs() {
   const boxShadowLightBu =
     '4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgba(255,255,255,1)'
   const boxShadowLight = 'inset 6px 6px 6px #cbced1, inset -6px -6px 6px white'
-  const boxShadowDark = 'inset 2px 2px 4px #000, inset -5px -3px 4px #17191e'
+  const boxShadowDark =
+    'inset 3px 3px 5px rgba(0,0,0,.7),inset -3px -3px 5px rgba(225,225,225,.1)'
 
   const activeBoxShadow = useColorModeValue(boxShadowLight, boxShadowDark)
   const inactiveBoxShadow = useColorModeValue(boxShadowLightBu, boxShadowDarkBu)
@@ -82,24 +83,28 @@ function MyTabs() {
                   name={'Adobe Premiere'}
                   progress={70}
                   darkProgress={69.9}
+                  color={'#8121b5'}
                 />
                 <ProgressBar
-                  image={'./images/pr.png'}
+                  image={'./images/ae.png'}
                   name={'Adobe After Effects'}
                   progress={70}
                   darkProgress={69.9}
+                  color={'purple'}
                 />
                 <ProgressBar
-                  image={'./images/pr.png'}
+                  image={'./images/ps.png'}
                   name={'Adobe Photoshop'}
                   progress={70}
                   darkProgress={69.9}
+                  color={'blue'}
                 />
                 <ProgressBar
-                  image={'./images/pr.png'}
+                  image={'./images/ai.png'}
                   name={'Adobe Illustrator'}
                   progress={70}
                   darkProgress={69.9}
+                  color={'orange'}
                 />
                 <ProgressBar
                   image={'./images/pr.png'}
