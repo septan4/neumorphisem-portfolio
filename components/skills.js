@@ -13,6 +13,7 @@ import {
 import { motion } from 'framer-motion'
 import Section from '../components/section'
 import ProgressBar from './progressbar'
+import ProgressBarCircular from './progressbarCircular'
 
 const MotionBox = motion(Box)
 
@@ -79,37 +80,75 @@ function MyTabs() {
               {' '}
               <SimpleGrid columns={[1, 2, 2]} gap={6}>
                 <ProgressBar
-                  image={'./images/pr.png'}
+                  image={'./images/pr1.png'}
                   name={'Adobe Premiere'}
                   progress={70}
                   darkProgress={69.9}
-                  color={'#8121b5'}
+                  width={50}
+                  color={'#ec9dfa'}
                 />
                 <ProgressBar
-                  image={'./images/ae.png'}
+                  image={'./images/ae1.png'}
                   name={'Adobe After Effects'}
                   progress={70}
                   darkProgress={69.9}
-                  color={'purple'}
+                  width={50}
+                  color={'#8b8bfe'}
                 />
                 <ProgressBar
-                  image={'./images/ps.png'}
+                  image={'./images/ps1.png'}
                   name={'Adobe Photoshop'}
                   progress={70}
                   darkProgress={69.9}
-                  color={'blue'}
+                  width={50}
+                  color={'#1b9bfe'}
                 />
                 <ProgressBar
-                  image={'./images/ai.png'}
+                  image={'./images/ai1.png'}
                   name={'Adobe Illustrator'}
                   progress={70}
                   darkProgress={69.9}
-                  color={'orange'}
+                  width={50}
+                  color={'#fe8400'}
                 />
                 <ProgressBar
-                  image={'./images/pr.png'}
+                  image={'./images/xd1.png'}
                   name={'Adobe XD'}
                   progress={30}
+                  color="#fe3dfa"
+                  width={50}
+                  darkProgress={29.9}
+                />
+                <ProgressBar
+                  image={'./images/lr.png'}
+                  name={'Adobe Lightroom'}
+                  progress={70}
+                  darkProgress={69.9}
+                  width={50}
+                  color={'#1c9cff'}
+                />
+                <ProgressBar
+                  image={'./images/dav.png'}
+                  name={'DaVinci Resolve'}
+                  progress={30}
+                  color="#011b43"
+                  width={50}
+                  darkProgress={29.9}
+                />
+                <ProgressBar
+                  image={'./images/cub.png'}
+                  name={'Steinberg Cubase'}
+                  progress={30}
+                  color="#971e2c"
+                  width={43}
+                  darkProgress={29.9}
+                />
+                <ProgressBar
+                  image={'./images/mio.png'}
+                  width={45}
+                  name={'Microsoft Office'}
+                  progress={30}
+                  color="#eb3c01"
                   darkProgress={29.9}
                 />
               </SimpleGrid>
@@ -125,36 +164,7 @@ function MyTabs() {
           >
             <Section delay={0.1}>
               <SimpleGrid columns={[1, 2, 2]} gap={6}>
-                <ProgressBar
-                  image={'./images/pr.png'}
-                  name={'Adobe Premiere'}
-                  progress={70}
-                  darkProgress={69.9}
-                />
-                <ProgressBar
-                  image={'./images/pr.png'}
-                  name={'Adobe After Effects'}
-                  progress={70}
-                  darkProgress={69.9}
-                />
-                <ProgressBar
-                  image={'./images/pr.png'}
-                  name={'Adobe Photoshop'}
-                  progress={70}
-                  darkProgress={69.9}
-                />
-                <ProgressBar
-                  image={'./images/pr.png'}
-                  name={'Adobe Illustrator'}
-                  progress={70}
-                  darkProgress={69.9}
-                />
-                <ProgressBar
-                  image={'./images/pr.png'}
-                  name={'Adobe XD'}
-                  progress={30}
-                  darkProgress={29.9}
-                />
+                Skill Content comes here ...
               </SimpleGrid>
             </Section>
           </MotionBox>
