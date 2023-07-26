@@ -23,16 +23,11 @@ const video6 = 'https://www.youtube.com/embed/eODz5Cjvws4'
 const video7 = 'https://www.youtube.com/embed/PzdVtVdYstw'
 
 const Works = () => {
-  const theme = useTheme()
-  const colorMode = theme.colorMode
   const boxShadowDarkBu =
     ' -3px -3px 3px 0 rgba(255, 255, 255, 0.04), 5px 5px 5px 0 rgba(0, 0, 0, 2)'
   const boxShadowLightBu =
     '4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgba(255,255,255,1)'
-  const boxShadowLight = 'inset 6px 6px 6px #cbced1, inset -6px -6px 6px white'
-  const boxShadowDark = 'inset 2px 2px 4px #000, inset -5px -3px 4px #17191e'
 
-  const activeBoxShadow = useColorModeValue(boxShadowLight, boxShadowDark)
   const inactiveBoxShadow = useColorModeValue(boxShadowLightBu, boxShadowDarkBu)
   const activeColor = useColorModeValue('#8121b5', 'whiteAlpha.900')
   const [visibleCount, setVisibleCount] = useState(4)

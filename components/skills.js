@@ -13,7 +13,6 @@ import {
 import { motion } from 'framer-motion'
 import Section from '../components/section'
 import ProgressBar from './progressbar'
-import ProgressBarCircular from './progressbarCircular'
 
 const MotionBox = motion(Box)
 

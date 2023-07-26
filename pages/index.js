@@ -1,12 +1,10 @@
 import NextLink from 'next/link'
 import {
-  Link,
   Container,
   Heading,
   Box,
   Button,
-  useColorModeValue,
-  chakra
+  useColorModeValue
 } from '@chakra-ui/react'
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
