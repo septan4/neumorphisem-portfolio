@@ -37,7 +37,7 @@ const Home = () => {
             +7 Years Experience Of Video Editing, Motion Graphic Designing,
             Sound Editing, Studio Production, Commercial Advising, Brand
             Consulting And Advertising. Excellent Communication Skills And
-            Ability To Identify Clients' Needs And Develop Successful
+            Ability To Identify Clients&apos; Needs And Develop Successful
             Promotional Strategies. Competent In Using Adobe After Effects And
             Adobe Premiere Pro To Fullfill The Needs Of My Clients.
           </Paragraph>

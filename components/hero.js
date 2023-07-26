@@ -27,7 +27,7 @@ const floatAnimations = keyframes`
 const animationFirst = `${floatAnimation} 3s ease-in-out infinite`
 const animationSecond = `${floatAnimations} 5s ease-in-out infinite`
 
-const hero = () => {
+const Hero = () => {
   const boxShadowLight = 'inset 6px 6px 6px #cbced1, inset -6px -6px 6px white'
   const boxShadowDark = 'inset 2px 2px 4px #000, inset -5px -3px 4px #17191e'
 
@@ -159,4 +159,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default Hero
