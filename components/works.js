@@ -47,7 +47,7 @@ const Works = () => {
 
   return (
     <Layout title="Works">
-      <Container maxW="container.lg">
+      <Container maxW="container.lg" id="works">
         <Box
           width="100%"
           boxShadow={inactiveBoxShadow}

@@ -4,12 +4,12 @@ import NextLink from 'next/link'
 import {
   Container,
   Box,
-  Link,
   Stack,
   Heading,
   Flex,
   Menu,
   MenuItem,
+  Link,
   MenuList,
   MenuButton,
   IconButton,
@@ -17,9 +17,13 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import dynamic from 'next/dynamic'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href
+const ScrollLink = dynamic(() => import('react-scroll').then(mod => mod.Link), {
+  ssr: false
+})
+const LinkItem = ({ to, path, target, children, ...props }) => {
+  const active = path === to
   const boxShadowDarkBu =
     ' -3px -3px 3px 0 rgba(255, 255, 255, 0.04), 5px 5px 5px 0 rgba(0, 0, 0, 2)'
   const boxShadowLightBu =
@@ -35,8 +39,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   return (
     <Link
       borderRadius="md"
-      as={NextLink}
-      href={href}
       scroll={false}
       boxShadow={active ? activeBoxShadow : inactiveBoxShadow}
       color={active ? activeColor : inactiveColor}
@@ -44,14 +46,34 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       target={target}
       {...props}
     >
-      {children}
+      <ScrollLink
+        activeClass="active"
+        to={to}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={2000}
+      >
+        {children}
+      </ScrollLink>
     </Link>
   )
 }
 
-const MenuLink = forwardRef((props, ref) => (
-  <Link ref={ref} as={NextLink} {...props} />
-))
+const MenuItemLink = ({ to, children, ...props }) => (
+  <MenuItem {...props} bg={useColorModeValue('#ecf0f3', '#17191e')}>
+    <ScrollLink
+      activeClass="active"
+      to={to}
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={1000}
+    >
+      {children}
+    </ScrollLink>
+  </MenuItem>
+)
 
 const Navbar = props => {
   const { path } = props
@@ -92,10 +114,10 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
+          <LinkItem to="works" path={path}>
             Works
           </LinkItem>
-          <LinkItem borderRadius="md" href="/posts" path={path}>
+          <LinkItem to="about" path={path}>
             About
           </LinkItem>
           <LinkItem borderRadius="md" href="/posts" path={path}>
@@ -116,27 +138,9 @@ const Navbar = props => {
                 boxShadow={useColorModeValue(boxShadowLightBu, boxShadowDarkBu)}
               />
               <MenuList bg={useColorModeValue('#ecf0f3', '#17191e')}>
-                <MenuItem
-                  bg={useColorModeValue('#ecf0f3', '#17191e')}
-                  as={MenuLink}
-                  href="/"
-                >
-                  About
-                </MenuItem>
-                <MenuItem
-                  bg={useColorModeValue('#ecf0f3', '#17191e')}
-                  as={MenuLink}
-                  href="/works"
-                >
-                  Works
-                </MenuItem>
-                <MenuItem
-                  bg={useColorModeValue('#ecf0f3', '#17191e')}
-                  as={MenuLink}
-                  href="/posts"
-                >
-                  Posts
-                </MenuItem>
+                <MenuItemLink to="works">Works</MenuItemLink>
+                <MenuItemLink to="about">About</MenuItemLink>
+                <MenuItemLink to="contact">Contact</MenuItemLink>
               </MenuList>
             </Menu>
           </Box>

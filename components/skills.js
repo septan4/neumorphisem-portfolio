@@ -82,24 +82,24 @@ function MyTabs() {
                 <ProgressBar
                   image={'./images/pr1.png'}
                   name={'Adobe Premiere'}
-                  progress={70}
-                  darkProgress={69.9}
+                  progress={99.9}
+                  darkProgress={100}
                   width={50}
                   color={'#ec9dfa'}
                 />
                 <ProgressBar
                   image={'./images/ae1.png'}
                   name={'Adobe After Effects'}
-                  progress={70}
-                  darkProgress={69.9}
+                  progress={85}
+                  darkProgress={84.9}
                   width={50}
                   color={'#8b8bfe'}
                 />
                 <ProgressBar
                   image={'./images/ps1.png'}
                   name={'Adobe Photoshop'}
-                  progress={70}
-                  darkProgress={69.9}
+                  progress={100}
+                  darkProgress={99.9}
                   width={50}
                   color={'#1b9bfe'}
                 />
@@ -122,34 +122,50 @@ function MyTabs() {
                 <ProgressBar
                   image={'./images/lr.png'}
                   name={'Adobe Lightroom'}
-                  progress={70}
-                  darkProgress={69.9}
+                  progress={100}
+                  darkProgress={99.9}
                   width={50}
                   color={'#1c9cff'}
                 />
                 <ProgressBar
+                  image={'./images/br.png'}
+                  name={'Adobe Bridge'}
+                  progress={100}
+                  darkProgress={99.9}
+                  width={48}
+                  color={'#000a1c'}
+                />
+                <ProgressBar
                   image={'./images/dav.png'}
                   name={'DaVinci Resolve'}
-                  progress={30}
+                  progress={80}
+                  darkProgress={79.9}
                   color="#011b43"
                   width={50}
-                  darkProgress={29.9}
                 />
                 <ProgressBar
                   image={'./images/cub.png'}
                   name={'Steinberg Cubase'}
-                  progress={30}
+                  progress={90}
+                  darkProgress={89.9}
                   color="#971e2c"
                   width={43}
-                  darkProgress={29.9}
+                />
+                <ProgressBar
+                  image={'./images/figma.png'}
+                  name={'Figma'}
+                  progress={25}
+                  darkProgress={24.9}
+                  color="#1cd955"
+                  width={50}
                 />
                 <ProgressBar
                   image={'./images/mio.png'}
                   width={45}
                   name={'Microsoft Office'}
-                  progress={30}
+                  progress={80}
+                  darkProgress={79.9}
                   color="#eb3c01"
-                  darkProgress={29.9}
                 />
               </SimpleGrid>
             </Section>

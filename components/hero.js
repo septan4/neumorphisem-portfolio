@@ -49,6 +49,7 @@ const hero = () => {
       alignItems={'center'}
       flexDir={'column'}
       justifyContent={'center'}
+      id="home"
     >
       <Box
         mt={{ base: 4, md: 0 }}

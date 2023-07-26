@@ -32,7 +32,7 @@ const Home = () => {
       <Works />
       <Container maxW="container.lg" mt={20}>
         <Section delay={0.1}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" variant="section-title" id="about">
             About
           </Heading>
           <Paragraph>
