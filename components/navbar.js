@@ -118,7 +118,7 @@ const Navbar = props => {
           <LinkItem to="about" path={path}>
             About
           </LinkItem>
-          <LinkItem borderRadius="md" href="/posts" path={path}>
+          <LinkItem to="contact" path={path}>
             Contact
           </LinkItem>
         </Stack>
