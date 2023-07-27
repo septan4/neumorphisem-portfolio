@@ -13,7 +13,7 @@ const ProgressBar = ({ name, image, progress, darkProgress, color, width }) => {
   const { colorMode } = useColorMode()
   const barValue = colorMode === 'dark' ? darkProgress : progress
   const gradientColor = color
-  const bg = colorMode === 'dark' ? 'gray.200' : '#EBECF0'
+
   useEffect(() => {
     progressAnimation.start({
       width: `${barValue}%`,

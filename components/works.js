@@ -11,7 +11,6 @@ import Section from './section'
 import { WorkGridItem } from './grid-item'
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useTheme } from '@chakra-ui/react'
 
 const video = 'https://www.youtube-nocookie.com/embed/8QOVtlgGZg0'
 const video1 = 'https://www.youtube-nocookie.com/embed/QKdy4V5htcI'
