@@ -199,7 +199,7 @@ const Contact = () => {
                     <FormControl isRequired>
                       <FormLabel
                         requiredIndicator={
-                          <span style={{ color: '#00c7ff' }}> * </span>
+                          <span style={{ color: '#8121b5' }}> * </span>
                         }
                       >
                         Your Name
@@ -225,7 +225,7 @@ const Contact = () => {
                     <FormControl isRequired>
                       <FormLabel
                         requiredIndicator={
-                          <span style={{ color: '#00c7ff' }}> * </span>
+                          <span style={{ color: '#8121b5' }}> * </span>
                         }
                       >
                         Email
@@ -253,7 +253,7 @@ const Contact = () => {
                     <FormControl isRequired>
                       <FormLabel
                         requiredIndicator={
-                          <span style={{ color: '#00c7ff' }}> * </span>
+                          <span style={{ color: '#8121b5' }}> * </span>
                         }
                       >
                         Message
@@ -278,11 +278,11 @@ const Contact = () => {
                     <Box my={5} align="center">
                       <Button
                         w="100%"
+                        color={useColorModeValue(' #8121b5', 'none')}
                         type="submit"
                         leftIcon={<EmailIcon />}
                         colorScheme="none"
                         boxShadow={formBoxShadow}
-                        color="none"
                       >
                         Send
                       </Button>
