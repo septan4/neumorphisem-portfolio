@@ -6,13 +6,13 @@ import {
   Button,
   useColorModeValue
 } from '@chakra-ui/react'
-
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
 import Skill from '../components/skills'
+import Contact from '../components/contact'
 
 import Hero from '../components/hero'
 import Works from '../components/works'
@@ -28,18 +28,26 @@ const Home = () => {
     <Layout>
       <Hero />
       <Works />
-      <Container maxW="container.lg" mt={20}>
+      <Container maxW="container.lg" mt={20} mb={20}>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title" id="about">
             About
           </Heading>
           <Paragraph>
-            +7 Years Experience Of Video Editing, Motion Graphic Designing,
-            Sound Editing, Studio Production, Commercial Advising, Brand
-            Consulting And Advertising. Excellent Communication Skills And
-            Ability To Identify Clients&apos; Needs And Develop Successful
-            Promotional Strategies. Competent In Using Adobe After Effects And
-            Adobe Premiere Pro To Fullfill The Needs Of My Clients.
+            With +7 years of experience in video editing, VFX designing, motion
+            graphic designing, sound editing, studio production, CRM, marketing
+            strategies, branding strategies and advertising, I possess a wealth
+            of expertise in these areas. My exceptional communication skills
+            enable me to identify the needs of clients effectively and develop
+            successful promotional strategies that exceed their expectations.
+          </Paragraph>
+          <Paragraph>
+            {' '}
+            I am competent in using the required software related to the field
+            of work to fulfil the needs of clients. As a professional, I
+            approach my work with the utmost dedication and commitment, striving
+            always to produce high-quality results that meet the client's
+            specifications.
           </Paragraph>
           <Box my={10}>
             <Skill />
@@ -59,7 +67,9 @@ const Home = () => {
           </Box>
         </Section>
 
-        <Section delay={0.2}></Section>
+        <Section delay={0.2}>
+          <Contact />
+        </Section>
 
         <Section delay={0.3}></Section>
       </Container>

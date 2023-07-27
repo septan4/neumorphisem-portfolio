@@ -149,8 +149,8 @@ const Hero = () => {
           initial={{ x: -500 }}
           animate={{ x: 0, transition: { delay: 0.5, duration: 2, ease } }}
         >
-          your all-in-one video editing and marketing professional, rooted in
-          years of diverse experience.
+          your all-in-one Visual director and content creator, rooted in years
+          of diverse experience.
           <br />
           Ready to exceed your expectations, from studio to screen!
         </motion.p>

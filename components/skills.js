@@ -79,12 +79,12 @@ function MyTabs() {
               {' '}
               <SimpleGrid columns={[1, 2, 2]} gap={6}>
                 <ProgressBar
-                  image={'./images/pr1.png'}
+                  image={'./images/pr3.png'}
                   name={'Adobe Premiere'}
                   progress={99.9}
                   darkProgress={100}
                   width={50}
-                  color={'#ec9dfa'}
+                  color={'#8c8cff'}
                 />
                 <ProgressBar
                   image={'./images/ae1.png'}
@@ -92,7 +92,7 @@ function MyTabs() {
                   progress={85}
                   darkProgress={84.9}
                   width={50}
-                  color={'#8b8bfe'}
+                  color={'#8c8cff'}
                 />
                 <ProgressBar
                   image={'./images/ps1.png'}
