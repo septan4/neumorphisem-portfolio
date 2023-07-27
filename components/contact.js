@@ -10,7 +10,6 @@ import {
   useColorModeValue,
   Heading,
   IconButton,
-  VStack,
   Link
 } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
