@@ -14,7 +14,6 @@ import {
 } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import P from '../components/paragraph'
-import send from 'emailjs-com'
 import {
   FaFacebookF,
   FaTwitter,
@@ -25,9 +24,10 @@ import {
 } from 'react-icons/fa'
 import Layout from './layouts/article'
 import Section from './section'
-import React, { useState } from 'react'
-
+import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { useForm } from 'react-hook-form'
+
 const Contact = () => {
   const formShadowDark =
     '  -3px -3px 3px 0 rgba(255, 255, 255, 0.04), 5px 5px 5px 0 rgba(0, 0, 0, 2)'
@@ -45,32 +45,32 @@ const Contact = () => {
     formShadowInputDark
   )
 
+  const form = useRef()
   const [statusMessage, setStatusMessage] = useState('')
   const { register, handleSubmit, reset } = useForm()
 
-  const onSubmit = async data => {
-    try {
-      const templateParams = {
-        name: data.name,
-        email: data.email,
-        message: data.message
-      }
+  const sendEmail = e => {
+    e.preventDefault()
 
-      await send(
+    emailjs
+      .sendForm(
         'service_x6gm4kr',
         'template_jy47etc',
-        templateParams,
+        form.current,
         'm8ZdxvWUyFrvemFhA'
       )
-
-      reset()
-      setStatusMessage('Message sent successfully!')
-      setTimeout(() => setStatusMessage(''), 5000)
-    } catch (error) {
-      console.error('Failed to send the message', error)
-      setStatusMessage('Failed to send the message. Please try again.')
-      setTimeout(() => setStatusMessage(''), 5000)
-    }
+      .then(
+        result => {
+          console.log(result.text)
+          setStatusMessage('Message sent successfully!')
+          setTimeout(() => setStatusMessage(''), 5000)
+        },
+        error => {
+          console.error('Failed to send the message', error.text)
+          setStatusMessage('Failed to send the message. Please try again.')
+          setTimeout(() => setStatusMessage(''), 5000)
+        }
+      )
   }
 
   return (
@@ -194,7 +194,7 @@ const Contact = () => {
                 w={'300px'}
                 h={'100%'}
               >
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form ref={form} onSubmit={sendEmail}>
                   <SimpleGrid columns={[1, 1, 1]} gap={6} mt={4}>
                     <FormControl isRequired>
                       <FormLabel
