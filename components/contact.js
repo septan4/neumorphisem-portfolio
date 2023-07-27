@@ -47,7 +47,7 @@ const Contact = () => {
 
   const form = useRef()
   const [statusMessage, setStatusMessage] = useState('')
-  const { register, handleSubmit, reset } = useForm()
+  const { register } = useForm()
 
   const sendEmail = e => {
     e.preventDefault()
