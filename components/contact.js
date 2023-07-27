@@ -78,7 +78,7 @@ const Contact = () => {
       <Container maxW="container.lg" id="contact" mt={20}>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title" id="about">
-            About
+            Contact
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
             <Box>
