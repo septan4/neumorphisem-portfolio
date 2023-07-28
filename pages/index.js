@@ -40,15 +40,13 @@ const Home = () => {
             of expertise in these areas. My exceptional communication skills
             enable me to identify the needs of clients effectively and develop
             successful promotional strategies that exceed their expectations.
+            <br></br>I am competent in using the required software related to
+            the field of work to fulfil the needs of clients. As a professional,
+            I approach my work with the utmost dedication and commitment,
+            striving always to produce high-quality results that meet the
+            client&apos;s specifications.
           </Paragraph>
-          <Paragraph>
-            {' '}
-            I am competent in using the required software related to the field
-            of work to fulfil the needs of clients. As a professional, I
-            approach my work with the utmost dedication and commitment, striving
-            always to produce high-quality results that meet the client&apos;s
-            specifications.
-          </Paragraph>
+
           <Box my={10}>
             <Skill />
           </Box>

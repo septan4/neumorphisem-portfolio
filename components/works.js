@@ -20,6 +20,7 @@ const video4 = 'https://www.youtube.com/embed/qO6LHn9SQzs'
 const video5 = 'https://www.youtube.com/embed/pZcBJafF79w'
 const video6 = 'https://www.youtube.com/embed/eODz5Cjvws4'
 const video7 = 'https://www.youtube.com/embed/PzdVtVdYstw'
+const video8 = 'https://www.youtube.com/embed/91PyAkfKtzU'
 
 const Works = () => {
   const boxShadowDarkBu =
@@ -30,7 +31,17 @@ const Works = () => {
   const inactiveBoxShadow = useColorModeValue(boxShadowLightBu, boxShadowDarkBu)
   const activeColor = useColorModeValue('#8121b5', 'whiteAlpha.900')
   const [visibleCount, setVisibleCount] = useState(4)
-  const videos = [video, video1, video2, video3, video4, video5, video6, video7]
+  const videos = [
+    video,
+    video1,
+    video2,
+    video3,
+    video4,
+    video5,
+    video6,
+    video7,
+    video8
+  ]
   const handleSeeMoreClick = () => {
     if (visibleCount === 4) {
       setVisibleCount(videos.length) // Show all videos
