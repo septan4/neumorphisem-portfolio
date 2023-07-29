@@ -223,7 +223,7 @@ function MyTabs() {
                   years={6}
                 />{' '}
                 <ProgressBarCircular
-                  text="Motion Designing"
+                  text="Motion Graphic"
                   percentage={90}
                   years={6}
                 />{' '}
