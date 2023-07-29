@@ -13,6 +13,7 @@ import {
 import { motion } from 'framer-motion'
 import Section from '../components/section'
 import ProgressBar from './progressbar'
+import ProgressBarCircular from './Circular/progressbarCircular'
 
 const MotionBox = motion(Box)
 
@@ -178,8 +179,54 @@ function MyTabs() {
             transition={{ duration: 2 }}
           >
             <Section delay={0.1}>
-              <SimpleGrid columns={[1, 2, 2]} gap={6}>
-                Skill Content comes here ...
+              <SimpleGrid columns={[1, 2, 4]} gap={6}>
+                <ProgressBarCircular
+                  text="Motion Graphic Designing"
+                  percentage={90}
+                  years={6}
+                />{' '}
+                <ProgressBarCircular
+                  text="Visual Effects"
+                  percentage={40}
+                  years={4}
+                />{' '}
+                <ProgressBarCircular
+                  text="Colour Correction"
+                  percentage={90}
+                  years={6}
+                />{' '}
+                <ProgressBarCircular
+                  text="Sound Designing
+                  "
+                  percentage={100}
+                  years={7}
+                />{' '}
+                <ProgressBarCircular
+                  text="Video Editing "
+                  percentage={100}
+                  years={7}
+                />{' '}
+                <ProgressBarCircular
+                  text="Graphic Designing "
+                  percentage={40}
+                  years={4}
+                />{' '}
+                <ProgressBarCircular text="CRM" percentage={60} years={5} />{' '}
+                <ProgressBarCircular
+                  text="Marketing Strategies"
+                  percentage={40}
+                  years={4}
+                />{' '}
+                <ProgressBarCircular
+                  text="Branding Strategies"
+                  percentage={40}
+                  years={4}
+                />{' '}
+                <ProgressBarCircular
+                  text="Videography   "
+                  percentage={60}
+                  years={6}
+                />{' '}
               </SimpleGrid>
             </Section>
           </MotionBox>

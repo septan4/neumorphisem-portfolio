@@ -37,10 +37,10 @@ const Works = () => {
     video2,
     video3,
     video4,
-    video5,
+    video8,
     video6,
     video7,
-    video8
+    video5
   ]
   const handleSeeMoreClick = () => {
     if (visibleCount === 4) {
