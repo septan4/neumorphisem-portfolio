@@ -208,12 +208,12 @@ function MyTabs() {
                 />{' '}
                 <ProgressBarCircular text="CRM" percentage={60} years={5} />{' '}
                 <ProgressBarCircular
-                  text="Marketing Strategies"
+                  text="Marketing "
                   percentage={40}
                   years={4}
                 />{' '}
                 <ProgressBarCircular
-                  text="Branding Strategies"
+                  text="Branding "
                   percentage={40}
                   years={4}
                 />{' '}

@@ -48,7 +48,7 @@ const NeumorphicCircle = ({ text, percentage, years }) => {
           </h2>
         </div>
       </div>
-      <Text ml={1} mt="20px">
+      <Text m={'auto'} mt="20px">
         {text}
       </Text>
       <style jsx>{`
