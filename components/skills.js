@@ -179,12 +179,7 @@ function MyTabs() {
             transition={{ duration: 2 }}
           >
             <Section delay={0.1}>
-              <SimpleGrid columns={[1, 2, 4]} gap={6}>
-                <ProgressBarCircular
-                  text="Motion Graphic Designing"
-                  percentage={90}
-                  years={6}
-                />{' '}
+              <SimpleGrid columns={[2, 2, 4]} gap={6}>
                 <ProgressBarCircular
                   text="Visual Effects"
                   percentage={40}
@@ -225,6 +220,11 @@ function MyTabs() {
                 <ProgressBarCircular
                   text="Videography   "
                   percentage={60}
+                  years={6}
+                />{' '}
+                <ProgressBarCircular
+                  text="Motion Designing"
+                  percentage={90}
                   years={6}
                 />{' '}
               </SimpleGrid>
