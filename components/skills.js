@@ -69,7 +69,7 @@ function MyTabs() {
       </TabList>
 
       <TabPanels>
-        <TabPanel>
+        <TabPanel p={'0'} pt="5">
           <MotionBox
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -171,7 +171,7 @@ function MyTabs() {
             </Section>
           </MotionBox>
         </TabPanel>
-        <TabPanel>
+        <TabPanel p={'0'} pt="5">
           <MotionBox
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
