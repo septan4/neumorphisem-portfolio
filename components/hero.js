@@ -149,7 +149,7 @@ const Hero = () => {
           initial={{ x: -500 }}
           animate={{ x: 0, transition: { delay: 0.5, duration: 2, ease } }}
         >
-          your all-in-one Visual director and content creator, rooted in years
+          Your all-in-one visual director and content creator, rooted in years
           of diverse experience.
           <br />
           Ready to exceed your expectations, from studio to screen!
