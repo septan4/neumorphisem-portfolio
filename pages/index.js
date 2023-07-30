@@ -53,11 +53,12 @@ const Home = () => {
           <Box align="center" my={10}>
             <Button
               as={NextLink}
-              href="/works"
+              href="https://drive.google.com/file/d/1_B5ZSTipKpO4dza35Sym0mK46DSx3P05/view?usp=share_link"
               scroll={false}
               rightIcon={<ChevronRightIcon />}
               colorScheme="none"
               color={activeColor}
+              target="_blank"
               boxShadow={BoxShadow}
             >
               My Resume

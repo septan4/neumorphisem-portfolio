@@ -11,18 +11,25 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Sourena's homepage" />
         <meta name="author" content="Sepehr Tanhaei" />
-        <meta name="author" content="Sepehr Tanhaei" />
-        {/* <link rel="apple-touch-icon" href="apple-touch-icon.png" /> */}
-        {/* <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> */}
+        <meta name="author" content="Septan" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
         <meta name="twitter:title" content="Sourena" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@Sourenalz" />
         <meta name="twitter:creator" content="@Sourenalz" />
-        {/* <meta name="twitter:image" content="https://www.craftz.dog/card.png" /> */}
+        <meta
+          name="twitter:image"
+          content="https://sourenalalehzari.com/card.png"
+        />
         <meta property="og:site_name" content="Sourena Lalehzari" />
         <meta name="og:title" content="Sourena Lalehzari" />
         <meta property="og:type" content="website" />
-        {/* <meta property="og:image" content="https://www.craftz.dog/soren.png" /> */}
+        <meta
+          property="og:image"
+          content="https://www.sourenalalehzari.com/soren1.JPG"
+        />
         <title>Sourena LaLehzari - Homepage</title>
       </Head>
 
