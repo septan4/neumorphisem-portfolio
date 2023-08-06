@@ -53,7 +53,7 @@ const Home = () => {
           <Box align="center" my={10}>
             <Button
               as={NextLink}
-              href="https://drive.google.com/file/d/1_B5ZSTipKpO4dza35Sym0mK46DSx3P05/view?usp=share_link"
+              href="https://drive.google.com/file/d/1B5TqWBZk8DaV_atiDAuUYejw_cyYz5yf/view"
               scroll={false}
               rightIcon={<ChevronRightIcon />}
               colorScheme="none"
