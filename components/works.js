@@ -59,7 +59,7 @@ function MyTabs() {
             isLazy
           >
             <TabList display="flex" justifyContent="center" mb={4}>
-              <Flex direction="row" justifyContent="space-between" w="270px">
+              <Flex direction="row" justifyContent="space-between" w="260px">
                 <Tab
                   w="120px"
                   boxShadow={inactiveBoxShadow}
