@@ -15,7 +15,7 @@ import Skill from '../components/skills'
 import Contact from '../components/contact'
 
 import Hero from '../components/hero'
-import Works from '../components/newWorks'
+import Works from '../components/works'
 
 const Home = () => {
   const boxShadowDarkBu =
