@@ -9,8 +9,7 @@ import {
   TabPanel,
   TabPanels,
   useColorModeValue,
-  Flex,
-  SimpleGrid
+  Flex
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import Section from '../components/section'

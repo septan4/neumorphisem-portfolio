@@ -1,6 +1,5 @@
 import {
   Container,
-  Heading,
   SimpleGrid,
   useColorModeValue,
   Box,
