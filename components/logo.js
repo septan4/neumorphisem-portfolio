@@ -5,7 +5,7 @@ import { Link as ScrollLink } from 'react-scroll'
 
 const LogoBox = styled.span`
   font-weight: bold;
-  font-size: 18px;
+  font-size: 19px;
   display: inline-flex;
   align-items: center;
   height: 30px;
