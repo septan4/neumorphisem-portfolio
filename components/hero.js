@@ -97,7 +97,7 @@ const Hero = () => {
         >
           <ProfileImage
             boxShadow={BoxShadow}
-            src="/soren1.jpg"
+            src="/soren1.JPG"
             alt="Profile image"
             width="350"
             height="290"
