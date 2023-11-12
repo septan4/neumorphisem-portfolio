@@ -12,12 +12,11 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const video = 'https://www.youtube.com/embed/vQrCATU_y7U'
-const video1 = 'https://www.youtube.com/embed/RpkzbeRZ9KU'
-const video2 = 'https://www.youtube.com/embed/0z2whTJF97g'
-const video3 = 'https://www.youtube.com/embed/2j-2xm57G_Y'
-const video4 = 'https://www.youtube.com/embed/GDvJTz755Jc'
-const video5 = 'https://www.youtube.com/embed/b8RxrFdDdLQ'
-const video6 = 'https://www.youtube.com/embed/YhDWtBFjZrc'
+const video1 = 'https://www.youtube.com/embed/0z2whTJF97g'
+const video2 = 'https://www.youtube.com/embed/2j-2xm57G_Y'
+const video3 = 'https://www.youtube.com/embed/GDvJTz755Jc'
+const video4 = 'https://www.youtube.com/embed/b8RxrFdDdLQ'
+const video5 = 'https://www.youtube.com/embed/YhDWtBFjZrc'
 
 const Works = () => {
   const boxShadowDarkBu =
