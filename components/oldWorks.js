@@ -27,7 +27,7 @@ const Works = () => {
   const inactiveBoxShadow = useColorModeValue(boxShadowLightBu, boxShadowDarkBu)
   const activeColor = useColorModeValue('#8121b5', 'whiteAlpha.900')
   const [visibleCount, setVisibleCount] = useState(4)
-  const videos = [video, video1, video2, video3, video4, video6, video5]
+  const videos = [video, video1, video2, video3, video4, video5]
   const handleSeeMoreClick = () => {
     if (visibleCount === 4) {
       setVisibleCount(videos.length) // Show all videos
