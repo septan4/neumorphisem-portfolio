@@ -42,7 +42,7 @@ npm run dev
 
 ## Usage
 
-Visit the live portfolio website [here](https://sourenalalehzari.com) to explore my projects.
+Visit the live portfolio website [here](https://sourenalalehzari.com) to explore my project.
 
 ## Documentation
 
