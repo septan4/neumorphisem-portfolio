@@ -1,6 +1,14 @@
 # Neumorphisem Portfolio
 
-[![Project ScreenShot](./doc/sorenWhite.png)](https://www.sourenalalehzari.com/)
+<div style="display: flex; justify-content: space-between; ">
+    <a href="https://www.sourenalalehzari.com/">
+        <img src="./doc/sorenWhite.png" alt="Project ScreenShot" width="45%" />
+    </a>
+    <a href="https://www.sourenalalehzari.com/">
+        <img src="./doc/sorenDark.png" alt="Project ScreenShot" width="45%" />
+    </a>
+</div>
+
 
 ## Description
 Welcome to my personal portfolio website built using React, Chakra UI, and featuring a stunning Neumorphism design. This portfolio showcases my skills, projects, and experiences as a web developer. Explore my work and get in touch to discuss potential collaborations.
