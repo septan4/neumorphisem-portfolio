@@ -18,7 +18,6 @@ Welcome to my personal portfolio website built using React, Chakra UI, and featu
 - [Installation](#installation)
 - [Usage](#usage)
 - [Documentation](#documentation)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -47,8 +46,6 @@ Visit the live portfolio website [here](https://sourenalalehzari.com) to explore
 ## Documentation
 For detailed information on the project structure, component usage, and customization options, please refer to the [Documentation](./README.md).
 
-## Contributing
-I welcome contributions and bug reports! Please check the [Contribution Guidelines](CONTRIBUTING.md) before submitting pull requests.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
