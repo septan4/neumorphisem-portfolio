@@ -32,8 +32,8 @@ To run this project locally, follow these steps:
 2. Install dependencies:
 
 ```bash
-cd your-portfolio
-npm start
+cd neumorphisem-portfolio
+npm install
 ```
 
 3. Start the development server:
