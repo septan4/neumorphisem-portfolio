@@ -1,10 +1,10 @@
 # Neumorphisem Portfolio
 
-[![Project thumbnail](./doc/SOURENA.png)](https://www.sourenalalehzari.com/)
+![Project Logo or Screenshot](<[link-to-image.png](https://www.sepehrtanhaei.com/images/works/sorenDark.png)>)
 
 ## Description
 
-A personal portfolio website built using React js, Chakra UI, and featuring a stunning Neumorphism design. This portfolio showcases my skills, projects, and experiences as a web developer. Explore my work and get in touch to discuss potential collaborations.
+Welcome to my personal portfolio website built using React, Chakra UI, and featuring a stunning Neumorphism design. This portfolio showcases my skills, projects, and experiences as a web developer. Explore my work and get in touch to discuss potential collaborations.
 
 ## Table of Contents
 
@@ -14,6 +14,7 @@ A personal portfolio website built using React js, Chakra UI, and featuring a st
   - [Installation](#installation)
   - [Usage](#usage)
   - [Documentation](#documentation)
+  - [Contributing](#contributing)
   - [License](#license)
   - [Contact](#contact)
 
@@ -42,11 +43,15 @@ npm run dev
 
 ## Usage
 
-Visit the live portfolio website [here](https://sourenalalehzari.com) to explore my projects.
+Visit the live portfolio website [here](https://sourenalalehzari.com) to explore my projects .
 
 ## Documentation
 
-For detailed information on the project structure, component usage, and customization options, please refer to the [Documentation](./README.md).
+For detailed information on the project structure, component usage, and customization options, please refer to the [Documentation](docs/README.md).
+
+## Contributing
+
+I welcome contributions and bug reports! Please check the [Contribution Guidelines](CONTRIBUTING.md) before submitting pull requests.
 
 ## License
 
