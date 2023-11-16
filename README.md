@@ -1,10 +1,10 @@
 # Neumorphisem Portfolio
 
 <div style="display: flex; justify-content: space-between; ">
-    <a href="https://www.sourenalalehzari.com/">
+    <a href="https://www.sourenalalehzari.com/" target="_blank">
         <img src="./doc/sorenWhite.png" alt="Project ScreenShot" width="45%" />
     </a>
-    <a href="https://www.sourenalalehzari.com/">
+    <a href="https://www.sourenalalehzari.com/" target="_blank">
         <img src="./doc/sorenDark.png" alt="Project ScreenShot" width="45%" />
     </a>
 </div>
@@ -44,7 +44,7 @@ npm start
 Visit the live portfolio website [here](https://sourenalalehzari.com) to explore my projects .
 
 ## Documentation
-For detailed information on the project structure, component usage, and customization options, please refer to the [Documentation](docs/README.md).
+For detailed information on the project structure, component usage, and customization options, please refer to the [Documentation](./README.md).
 
 ## Contributing
 I welcome contributions and bug reports! Please check the [Contribution Guidelines](CONTRIBUTING.md) before submitting pull requests.
