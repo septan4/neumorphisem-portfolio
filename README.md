@@ -12,7 +12,7 @@
 
 
 ## Description
-Welcome to personal portfolio website built using React, Chakra UI, and featuring a stunning Neumorphism design. This portfolio showcases my skills, projects, and experiences as a web developer. Explore my work and get in touch to discuss potential collaborations.
+A personal portfolio website built using React js, Chakra UI, and featuring a stunning Neumorphism design. This portfolio showcases my skills, projects, and experiences as a web developer. Explore my work and get in touch to discuss potential collaborations.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -38,7 +38,7 @@ npm install
 
 3. Start the development server:
 ```bash
-npm start
+npm run dev
 ```
 ## Usage
 Visit the live portfolio website [here](https://sourenalalehzari.com) to explore my projects.
