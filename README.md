@@ -1,6 +1,6 @@
 # Neumorphisem Portfolio
 
-[![Project thumbnail](./doc/SOURENA.png)](https://www.sourenalalehzari.com/)
+[![Project thumbnail](./doc/sourena.png)](https://www.sourenalalehzari.com/)
 
 ## Description
 
