@@ -1,6 +1,6 @@
 # Neumorphisem Portfolio
 
-<div style="display: flex; justify-content: space-between; ">
+<div style="display: flex; justify-content: space-between;">
     <a href="https://www.sourenalalehzari.com/" target="_blank">
         <img src="./doc/sorenWhite.png" alt="Project ScreenShot" width="45%" />
     </a>
@@ -8,6 +8,7 @@
         <img src="./doc/sorenDark.png" alt="Project ScreenShot" width="45%" />
     </a>
 </div>
+
 
 
 ## Description
@@ -41,7 +42,7 @@ npm start
 npm start
 ```
 ## Usage
-Visit the live portfolio website [here](https://sourenalalehzari.com) to explore my projects .
+Visit the live portfolio website [here](https://sourenalalehzari.com) to explore my projects.
 
 ## Documentation
 For detailed information on the project structure, component usage, and customization options, please refer to the [Documentation](./README.md).
