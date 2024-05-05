@@ -20,6 +20,13 @@ const video5 = 'https://www.youtube.com/embed/pZcBJafF79w'
 const video6 = 'https://www.youtube.com/embed/eODz5Cjvws4'
 const video7 = 'https://www.youtube.com/embed/PzdVtVdYstw'
 const video8 = 'https://www.youtube.com/embed/91PyAkfKtzU'
+const video9 = 'https://www.youtube.com/embed/XQyqqapJxV0?si=w_92mKMJaJUze3op'
+const video10 = 'https://www.youtube.com/embed/Jf6sy9sCw9k?si=qBCbpiSe-kazFYFW'
+const video11 = 'https://www.youtube.com/embed/UK0TsFM5mr8?si=TV0XwS8_CqhT0SCy'
+const video12 = 'https://www.youtube.com/embed/cGU4FVXF1Dw?si=naribZEepsuDHWv2'
+const video13 = 'https://www.youtube.com/embed/m2PBj8P8PQw?si=l4GhkwRyIuQ4WfC0'
+const video14 = 'https://www.youtube.com/embed/EBRf93rt8YU?si=1hs23P28GzxODnFf'
+const video15 = 'https://www.youtube.com/embed/xGRbWcVt7OY?si=k2w6tUQr2986ZFkX'
 
 const Works = () => {
   const boxShadowDarkBu =
@@ -31,15 +38,22 @@ const Works = () => {
   const activeColor = useColorModeValue('#8121b5', 'whiteAlpha.900')
   const [visibleCount, setVisibleCount] = useState(4)
   const videos = [
+    video9,
     video,
     video1,
-    video2,
     video3,
+    video2,
     video4,
     video8,
     video6,
     video7,
-    video5
+    video5,
+    video10,
+    video11,
+    video12,
+    video13,
+    video14,
+    video15
   ]
   const handleSeeMoreClick = () => {
     if (visibleCount === 4) {
