@@ -167,7 +167,7 @@ const Contact = () => {
                   </Link>
 
                   <Link
-                    href="https://www.behance.net/sourenalalehza"
+                    href="https://www.behance.net/sourenalalehzari"
                     isExternal
                   >
                     <IconButton
